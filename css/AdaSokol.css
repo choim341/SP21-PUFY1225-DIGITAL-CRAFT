@@ -28,7 +28,7 @@
 }
 
 .wrapper ul li:hover{
-	background: crimson;
+	text-decoration: underline;
 }
 .wrapper ul ul{
 	display: none;
