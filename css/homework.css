@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+h1 {
+	text-align: center;
+	font-family: 'Dela Gothic One'; cursive;
+	-webkit-text-stroke: 1px black;
+	color: white;
+	font-size: 50px;
+	margin-bottom: -10px;
+}
+
+h1:hover {
+	color: black;
+}
+
+#first-section p {
+	text-align: center;
+	font-family: 'Barriecito'; sans-serif;
+	font-size: 15px;
+	letter-spacing: 0.4px;
+	margin-bottom: 50px;
+}
+
+#This-Week {
+	background-color: black;
+	font-family: 'Dela Gothic One'; cursive;
+	color: white;
+	padding-left: 30px;
+	padding-top: 1px;
+	padding-bottom: 70px;
+}
+
+#This-Week a {
+	text-decoration: none;
+	color: black;
+	-webkit-text-stroke: 1px white;
+	font-size: 60px;
+	font-family: serif;
+	float: left;
+}
+
+#This-Week a:hover {
+	color: white;
+}
+
+#This-Week p {
+	font-family: 'Montserrat'; sans-serif;
+	padding-top: 25px;
+}
+
+#Last-Week {
+	background-color: white;
+	font-family: 'Dela Gothic One'; cursive;
+	color: black;
+	padding-left: 30px;
+	padding-top: 1px;
+	padding-bottom: 70px;
+}
+
+#Last-Week a {
+	text-decoration: none;
+	color: white;
+	-webkit-text-stroke: 1px black;
+	font-size: 60px;
+	font-family: serif;
+	float: left;
+
+}
+
+#Last-Week a:hover {
+	color: black;
+}
+
+#Last-Week p {
+	font-family: 'Montserrat'; sans-serif;
+	padding-top: 25px;
+}
+
+#Pick-Week {
+	background-color: black;
+	font-family: 'Dela Gothic One'; cursive;
+	color: white;
+	padding-left: 30px;
+	padding-top: 1px;
+	padding-bottom: 250px;
+}
+
+.button {
+  font-size: 15px;
+  color: #fff;
+  border: 2px solid black;
+  border-radius: 50%;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+  padding-right: 40px;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  float: left;
+}
+
+.button:hover {
+  background: gray;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 300ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #C40808;
+}
+.popup .close:hover {
+  color: red;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  font-family: 'Montserrat'; sans-serif;
+  color: black;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+#hand {
+	position: fixed;
+	transform: scaleX(-1);
+	top: 0;
+	right: 0;
+	padding-top: 120px;
+}
+
+img {
+	width: 500px;
+	position: fixed;
+}
+
+.link {
+	display: none;
+	color: white;
+	background-color: black;
+	font-family: 'Montserrat'; sans-serif;
+	margin-top: 330px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: -15px;
+	float: right;
+	transform: scaleX(-1) rotate(10deg);
+	position: relative;
+	font-size: 15px;
+}
+
+.link a{
+	text-decoration: none;
+	color: white;
+}
+
+#hand:hover .link {
+	display: block;
+}	
+
+.popup a {
+	text-decoration: none;
+	color: black;
+	line-height: 30px;
+	vertical-align: left
+}
+
+.popup a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
