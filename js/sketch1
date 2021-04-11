@@ -1,24 +1,26 @@
-// runs once and sets up the scene
-function setup(){
-	createCanvas(600, 600);
+function setup() {
+  createCanvas(400, 400);
 }
 
-// runs FOREVER
-function draw(){
-	var rectWidth = 50;
-	var rectHeight = 50;
-	background(200);
-	noStroke();
-	fill("red");
-	ellipse(width/2, height/2, 50, 50);
+function draw() {
+	background(230);
 	stroke(0);
-	fill("green")
-	rect(width/2-rectWidth/2, height/2-rectHeight/2, 50, 50);
-	noStroke();
-	fill("blue")
-	ellipse(width/2, height/2, 20, 20);
-	stroke(0);
-	fill(200, 0, 200, 50);
-	triangle(width/2, 100, 320, 100, 310, 80);
+    fill("white")
+	rect(275, 80, 15, 20);
+	rect(125, 150, 150, 100);
+	rect(275, 120, 50, 100);
+	rect(325, 160, 10, 20);
+	rect(135, 140, 20, 10);
+	rect(245, 140, 20, 10);
+	rect(185, 130, 30, 20);
+    rect(192.5, 120, 15, 10);
+	ellipse(300, 100, 90, 90);
+	ellipse(300, 100, 70, 70);
+	ellipse(200, 200, 70, 70);
+	ellipse(200, 200, 60, 60);
+    ellipse(200, 200, 30, 30);
+    ellipse(200, 200, 20, 20);
+    triangle(192, 120, 185, 130, 192, 130);
+    triangle(208, 120, 208, 130, 215, 130);
 }
 
