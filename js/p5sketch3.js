@@ -25,4 +25,8 @@ function draw() {
         rect(x, y, 55, 55, 20);
       }
     }
+    fill('WHITE');
+    stroke(251, 251, 251);
+    line (xPos+135, yPos, xPos*5, yPos);
+    line (0, yPos+220, xPos*2, yPos+220);
 }
