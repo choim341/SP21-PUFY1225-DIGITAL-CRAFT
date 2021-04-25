@@ -5,6 +5,7 @@ function setup() {
   createCanvas(800, 600);
   noLoop();
   strokeWeight(1);
+  stroke('RED');
 }
 
 function draw() {
@@ -29,7 +30,6 @@ function draw() {
     
     //captured
     fill('RED');
-    stroke('RED');
     var step = 200;
     for (var x = 7.5; x < 800; x = x + step) {
       for (var y = 10; y < 600; y = y + step) {
