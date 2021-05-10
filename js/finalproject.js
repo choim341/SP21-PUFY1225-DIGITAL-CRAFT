@@ -2,6 +2,7 @@ let width = 140;
 let height = 50;
 let rectY = 0;
 let clr;
+let fr = 100;
 
 
 function setup() {
