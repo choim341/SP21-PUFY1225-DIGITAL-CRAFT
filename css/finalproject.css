@@ -67,8 +67,9 @@ ul {
 
 .leftcircle {
   font-size: 15px;
-  background-color: rgba(247, 56, 44, 100);
-  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 100);
+  color: rgba(247, 56, 44, 100);
+  border: 2px solid red;
   border-radius: 50%;
   text-decoration: none;
   font-family: 'Rock Salt', cursive;
