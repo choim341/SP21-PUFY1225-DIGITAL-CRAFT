@@ -1,8 +1,6 @@
 let width = 140;
 let height = 50;
-let rectX = 0;
 let rectY = 0;
-let fr = 100; //starting FPS
 let clr;
 
 
@@ -13,7 +11,6 @@ function setup() {
   canvas.style('z-index', '-1');
   fill(175);
   frameRate(10);
-//Background music credit: Prelude by The Soul Surfers
 }
 
 
