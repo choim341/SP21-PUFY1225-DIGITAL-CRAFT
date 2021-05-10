@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: rgba(112,111,211,0);
+}
+
+h3 {
+	color: white;
+	font-size: 100px;
+	font-family: 'Barriecito'; sans-serif;
+	/* center position fixed credit: https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center */
+	position: fixed;
+	top: 50%;
+   	left: 50%;
+   	transform: translate(-50%, -50%);
+}
+
+.west {
+  padding: 10px;
+  margin-left: 50px;
+  font-family: 'Rock Salt', cursive;
+  font-size: 21px;
+  font-weight: bold;
+  color: black;
+  background-color: rgba(112,111,211,0);
+  border: 2px solid rgba(112,111,211,0);
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+  float: left;
+}
+
+ul {
+	list-style-type: none;
+	text-decoration: none;
+	line-height: 30px;
+}
+
+.west:hover {
+	color: rgba(247, 56, 44, 100);
+}
+
+.east {
+  padding: 10px;
+  margin-right: 50px;
+  font-family: 'Rock Salt', cursive;
+  font-size: 21px;
+  font-weight: bold;
+  color: black;
+  background-color: rgba(112,111,211,0);
+  border: 2px solid rgba(112,111,211,0);
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+  text-align: right;
+  float: right;
+}
+
+.east:hover {
+	color: rgba(247, 56, 44, 100);
+}
+
+.leftcircle {
+  font-size: 15px;
+  background-color: rgba(247, 56, 44, 100);
+  border: 2px solid black;
+  border-radius: 50%;
+  text-decoration: none;
+  font-family: 'Rock Salt', cursive;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-bottom: 30px;
+  padding-right: 40px;
+  top: 80%;
+  left: 30%;
+  position: fixed;
+}
+
+.rightcircle {
+  font-size: 15px;
+  background-color: rgba(247, 56, 44, 100);
+  border: 2px solid black;
+  border-radius: 50%;
+  text-decoration: none;
+  font-family: 'Rock Salt', cursive;
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-bottom: 30px;
+  padding-right: 40px;
+  width: 50px;
+  top: 80%;
+  left: 60%;
+  position: fixed;
+}
+
+/* interactive light box credit: https://codepen.io/gschier/pen/HCoqh */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 100);
+  transition: opacity 1s;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 2s ease-in-out;
+  text-decoration: none;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: 'Rock Salt', cursive;
+  text-decoration: none;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-family: 'Rock Salt', cursive;
+  font-weight: bold;
+  text-decoration: none;
+  color: #C40808;
+}
+.popup .close:hover {
+  color: red;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  font-family: 'Rock Salt', cursive;
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+a:link {
+	text-decoration: none;
+}
+
+.rightarrow {
+	display: block;
+	float: right;
+	width: 120px;
+	position: fixed;
+	top: 55%;
+ 	left: 67%;
+}
+
+.leftarrow {
+	display: block;
+	width: 120px;
+	position: fixed;
+	top: 55%;
+ 	left: 25%;
+}
